@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "name": "Portland Cement Type I",
+      "uom": "bag",
+      "unitMaterialCost": 9.5
+    },
+    {
+      "id": "p2",
+      "name": "Concrete Block 8x8x16",
+      "uom": "block",
+      "unitMaterialCost": 1.25
+    },
+    {
+      "id": "p3",
+      "name": "Reinforcing Steel #4",
+      "uom": "kg",
+      "unitMaterialCost": 0.85
+    }
+  ]
+}

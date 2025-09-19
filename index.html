@@ -8,8 +8,46 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-  <h1>Construction Material Catalog & Estimator</h1>
-  <p>This is the static version of the estimator workspace.</p>
+  <header>
+    <h1>Construction Material Catalog & Estimator</h1>
+    <p class="muted">Static estimator tool with catalog, calculator, CSV & PDF export</p>
+  </header>
+
+  <main>
+    <!-- Catalog -->
+    <section class="card">
+      <h2>Product Catalog</h2>
+      <input id="search" placeholder="Search product..." />
+      <div id="catalog"></div>
+    </section>
+
+    <!-- Estimator -->
+    <section class="card">
+      <h2>Estimator Workspace</h2>
+      <button id="addLine">+ Add Line</button>
+      <table id="lines">
+        <thead>
+          <tr>
+            <th>Description</th><th>Qty</th><th>Unit</th>
+            <th>Material</th><th>Labor</th><th>Equipment</th>
+            <th>Total</th><th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="actions">
+        <button id="calc">Calculate</button>
+        <button id="exportCSV">Export CSV</button>
+        <button id="exportPDF">Export PDF</button>
+      </div>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Construction Estimator Demo</small>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
